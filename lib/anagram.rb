@@ -5,13 +5,18 @@ class Anagram
     @word = word
   end
 
+  # def match(array)
+  #   matches = []
+  #   array.each do |string|
+  #     if string.chars.sort.join == word.chars.sort.join
+  #       matches << string
+  #     end
+  #   end
+  #   matches
+  # end
+
   def match(array)
-    matches = []
-    array.each do |string|
-      if string.chars.sort.join == word.chars.sort.join
-        matches << string
-      end
+    array.each {|string| matches<< if string.chars.sort.join == word.chars.sort.join}
     end
-    matches
   end
 end
