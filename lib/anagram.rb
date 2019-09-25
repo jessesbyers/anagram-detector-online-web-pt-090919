@@ -10,10 +10,8 @@ class Anagram
     array.each do |string|
       if string.chars.sort.join == word.chars.sort.join
         matches << string
-
       end
     end
     matches
   end
-
 end
