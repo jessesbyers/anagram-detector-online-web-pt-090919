@@ -16,7 +16,7 @@ class Anagram
   # end
 
   def match(array)
-    array.each {|string| matches<< if string.chars.sort.join == word.chars.sort.join}
-    end
+    array.each {|string| matches<< if string.chars.sort.join == word.chars.sort.join end}
+    
   end
 end
